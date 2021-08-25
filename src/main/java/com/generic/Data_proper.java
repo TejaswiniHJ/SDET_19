@@ -8,7 +8,7 @@ import java.util.Properties;
 public class Data_proper {
 	public String read(String key) throws IOException
 	{
-		FileInputStream fis=new FileInputStream("../SDET_19/src/test/resources/commData.properties.txt");
+		FileInputStream fis=new FileInputStream(AutoConstants.proppath);
 
 
 		Properties prop=new Properties();

@@ -3,7 +3,7 @@ package com.generic;
 public interface AutoConstants {
 	public static String DirPath=System.getProperty("user.dir");
 	
-	String p=DirPath+"../vtigerconcept/CommonData.propeties";
+	String proppath=DirPath+"/src/test/resources/commData.properties.txt";
 	String propfile="";
 	String JSONfilepath="";
 	String XMLfilepath="";

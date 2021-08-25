@@ -5,8 +5,11 @@
     <classes>
       <class name="assignmentTC.Testcase1">
         <methods>
+          <include name="launch"/>
+          <include name="logout"/>
           <include name="method"/>
           <include name="JDBCconnection"/>
+          <include name="login"/>
         </methods>
       </class> <!-- assignmentTC.Testcase1 -->
     </classes>

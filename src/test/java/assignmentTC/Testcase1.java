@@ -14,7 +14,7 @@ public class Testcase1 extends Base_Test
 	public void method() throws InterruptedException
 	{
 
-
+///SDET_19/src/test/resources/commData.properties.txt
 		HomePage hm=new HomePage(driver);
 
 		hm.getmorelinkk().click();
