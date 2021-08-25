@@ -55,7 +55,7 @@ public class LoginPage {
 	{
 		getUsername().sendKeys(username);
 		getUsername().sendKeys(Password);
-		
+		getLoginbtn().click();
 	
 	}
 		

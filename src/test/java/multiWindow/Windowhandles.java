@@ -22,15 +22,16 @@ public class Windowhandles {
 						driver.switchTo().window(wh);
 						String title = driver.getTitle();
 						System.out.println(title);
-					}
+					
 						
 						if(allwh.contains("Tech Mahindra"))
 						{
 						
-						
+						break;
 					}
 		}
 					
+}
 }
 
 

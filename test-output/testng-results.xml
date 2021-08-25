@@ -1,147 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="93422" started-at="2021-08-19T07:19:52Z" finished-at="2021-08-19T07:21:26Z">
+  <suite name="Default suite" duration-ms="250" started-at="2021-08-23T10:49:30Z" finished-at="2021-08-23T10:49:31Z">
     <groups>
     </groups>
-    <test name="TestRunner1" duration-ms="20779" started-at="2021-08-19T07:19:52Z" finished-at="2021-08-19T07:20:13Z">
-      <class name="assignmentTC.Testcase1">
-        <test-method status="PASS" signature="launch(java.lang.String)[pri:0, instance:assignmentTC.Testcase1@6a41eaa2]" name="launch" is-config="true" duration-ms="4625" started-at="2021-08-19T12:49:52Z" finished-at="2021-08-19T12:49:57Z">
+    <test name="Default test" duration-ms="250" started-at="2021-08-23T10:49:30Z" finished-at="2021-08-23T10:49:31Z">
+      <class name="data_Provider.Twoimension_Array">
+        <test-method status="PASS" signature="data(java.lang.String, java.lang.String)[pri:0, instance:data_Provider.Twoimension_Array@61832929]" name="data" duration-ms="16" started-at="2021-08-23T16:19:30Z" data-provider="getarray" finished-at="2021-08-23T16:19:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[us1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[psd1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="login()[pri:0, instance:assignmentTC.Testcase1@6a41eaa2]" name="login" is-config="true" duration-ms="9888" started-at="2021-08-19T12:49:57Z" finished-at="2021-08-19T12:50:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="method()[pri:0, instance:assignmentTC.Testcase1@6a41eaa2]" name="method" duration-ms="224" started-at="2021-08-19T12:50:07Z" finished-at="2021-08-19T12:50:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:assignmentTC.Testcase1@6a41eaa2]" name="logout" is-config="true" duration-ms="5827" started-at="2021-08-19T12:50:07Z" finished-at="2021-08-19T12:50:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:assignmentTC.Testcase1@6a41eaa2]" name="closebrowser" is-config="true" duration-ms="168" started-at="2021-08-19T12:50:13Z" finished-at="2021-08-19T12:50:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- assignmentTC.Testcase1 -->
-    </test> <!-- TestRunner1 -->
-    <test name="TestRunner2" duration-ms="72603" started-at="2021-08-19T07:20:13Z" finished-at="2021-08-19T07:21:26Z">
-      <class name="assignmentTC.Testcase1">
-        <test-method status="PASS" signature="JDBCconnection()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="JDBCconnection" is-config="true" duration-ms="15" started-at="2021-08-19T12:49:52Z" finished-at="2021-08-19T12:49:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JDBCconnection -->
-        <test-method status="FAIL" signature="launch(java.lang.String)[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="launch" is-config="true" duration-ms="0" started-at="2021-08-19T12:50:13Z" finished-at="2021-08-19T12:50:13Z">
+        </test-method> <!-- data -->
+        <test-method status="PASS" signature="data(java.lang.String, java.lang.String)[pri:0, instance:data_Provider.Twoimension_Array@61832929]" name="data" duration-ms="0" started-at="2021-08-23T16:19:30Z" data-provider="getarray" finished-at="2021-08-23T16:19:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[us2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[psd2]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[connection refused
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q1UIHP7', ip: '192.168.43.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: connection refused
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-Q1UIHP7', ip: '192.168.43.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at com.generic.Base_Test.launch(Base_Test.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="login" is-config="true" duration-ms="0" started-at="2021-08-19T12:51:26Z" finished-at="2021-08-19T12:51:26Z">
+        </test-method> <!-- data -->
+        <test-method status="PASS" signature="data(java.lang.String, java.lang.String)[pri:0, instance:data_Provider.Twoimension_Array@61832929]" name="data" duration-ms="0" started-at="2021-08-23T16:19:30Z" data-provider="getarray" finished-at="2021-08-23T16:19:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[psd3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="SKIP" signature="method()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="method" duration-ms="15" started-at="2021-08-19T12:51:26Z" finished-at="2021-08-19T12:51:26Z">
+        </test-method> <!-- data -->
+        <test-method status="PASS" signature="data(java.lang.String, java.lang.String)[pri:0, instance:data_Provider.Twoimension_Array@61832929]" name="data" duration-ms="15" started-at="2021-08-23T16:19:30Z" data-provider="getarray" finished-at="2021-08-23T16:19:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[psd4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method -->
-        <test-method status="SKIP" signature="closebrowser()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="closebrowser" is-config="true" duration-ms="0" started-at="2021-08-19T12:51:26Z" finished-at="2021-08-19T12:51:26Z">
+        </test-method> <!-- data -->
+        <test-method status="PASS" signature="data(java.lang.String, java.lang.String)[pri:0, instance:data_Provider.Twoimension_Array@61832929]" name="data" duration-ms="0" started-at="2021-08-23T16:19:31Z" data-provider="getarray" finished-at="2021-08-23T16:19:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[psd1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closebrowser -->
-        <test-method status="SKIP" signature="logout()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="logout" is-config="true" duration-ms="0" started-at="2021-08-19T12:51:26Z" finished-at="2021-08-19T12:51:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="SKIP" signature="JDBCconnect()[pri:0, instance:assignmentTC.Testcase1@57fffcd7]" name="JDBCconnect" is-config="true" duration-ms="0" started-at="2021-08-19T12:51:26Z" finished-at="2021-08-19T12:51:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JDBCconnect -->
-      </class> <!-- assignmentTC.Testcase1 -->
-    </test> <!-- TestRunner2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- data -->
+      </class> <!-- data_Provider.Twoimension_Array -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -11,7 +11,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 
 import com.objectrepo.HomePage;
 import com.objectrepo.LoginPage;
@@ -30,16 +29,18 @@ public class Base_Test {
 		System.out.println("connection done");
 	}
 	
-	@Parameters("browser")
+	
+	//@Parameters("browser")
 	@BeforeClass(groups={"Regression","Smoke"})
-	public void launch(String browser) throws IOException
+	public void launch() throws IOException
 	{
-		//String browser = dat.read("browser");
-		if(browser.equals("chrome"))
+		//String Browser = System.getProperty("browser");
+		String Browser = dat.read("browser");
+		if(Browser.equalsIgnoreCase("Chrome"))
 		{
 			driver=new ChromeDriver();
 		}
-		else if (browser.equals("firefox")) {
+		else if (Browser.equals("firefox")) {
 			driver=new FirefoxDriver();
 		}
 		else {
@@ -51,7 +52,10 @@ public class Base_Test {
 	@BeforeMethod(groups={"Regression","Smoke"})
 	public void login() throws IOException
 	{
+		//String URL = System.getProperty("url");
+		
 		driver.get(dat.read("url"));
+		//driver.get(URL);
 		LoginPage log=new LoginPage(driver);
 		log.loginapp();
 
