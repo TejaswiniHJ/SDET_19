@@ -1,7 +1,11 @@
 package com.generic;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,14 +16,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.google.protobuf.ByteString.Output;
 import com.objectrepo.HomePage;
 import com.objectrepo.LoginPage;
 
 public class Base_Test {
 	
+	private static final String OutputType_File = null;
 	public WebDriver driver;
 	public Data_proper dat=new Data_proper();
-	
+	public static WebDriver staticdriver; 
 
 
 
@@ -55,6 +61,7 @@ public class Base_Test {
 		//String URL = System.getProperty("url");
 		
 		driver.get(dat.read("url"));
+		staticdriver=driver;
 		//driver.get(URL);
 		LoginPage log=new LoginPage(driver);
 		log.loginapp();
@@ -74,6 +81,17 @@ public class Base_Test {
 		driver.close();
 	}
 	
+	
+	public static String getScreenshot(String name) throws IOException
+	{
+		File src=((TakesScreenshot) staticdriver).getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir")+"/Photos/"+name+".png";
+		File finaldest=new File(dest);
+		FileUtils.copyFile(src, finaldest);
+        
+		return dest;
+	}
+	 
 	@AfterSuite(groups={"Regression","Smoke"})
 	public void JDBCconnect()
 	{

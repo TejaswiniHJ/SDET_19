@@ -10,6 +10,8 @@
           <include name="method"/>
           <include name="JDBCconnection"/>
           <include name="login"/>
+          <include name="JDBCconnect"/>
+          <include name="closebrowser"/>
         </methods>
       </class> <!-- assignmentTC.Testcase1 -->
     </classes>
