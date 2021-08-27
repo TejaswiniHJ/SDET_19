@@ -1,84 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="155523" started-at="2021-08-27T06:44:55Z" finished-at="2021-08-27T06:47:30Z">
+  <suite name="Default suite" duration-ms="17662" started-at="2021-08-27T11:43:42Z" finished-at="2021-08-27T11:44:00Z">
     <groups>
-      <group name="Regression">
-        <method signature="Testcase1.method()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="method" class="assignmentTC.Testcase1"/>
-      </group> <!-- Regression -->
     </groups>
-    <test name="Default test" duration-ms="155523" started-at="2021-08-27T06:44:55Z" finished-at="2021-08-27T06:47:30Z">
-      <class name="assignmentTC.Testcase1">
-        <test-method status="PASS" signature="JDBCconnection()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="JDBCconnection" is-config="true" duration-ms="16" started-at="2021-08-27T12:14:55Z" finished-at="2021-08-27T12:14:55Z">
+    <test name="Default test" duration-ms="17662" started-at="2021-08-27T11:43:42Z" finished-at="2021-08-27T11:44:00Z">
+      <class name="vtiger.Extentreporter">
+        <test-method status="PASS" signature="setup()[pri:0, instance:vtiger.Extentreporter@6cc4cdb9]" name="setup" is-config="true" duration-ms="3231" started-at="2021-08-27T17:13:39Z" finished-at="2021-08-27T17:13:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JDBCconnection -->
-        <test-method status="PASS" signature="launch()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="launch" is-config="true" duration-ms="28690" started-at="2021-08-27T12:14:55Z" finished-at="2021-08-27T12:15:24Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:vtiger.Extentreporter@6cc4cdb9]" name="test1" duration-ms="10486" started-at="2021-08-27T17:13:42Z" finished-at="2021-08-27T17:13:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method status="PASS" signature="login()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="login" is-config="true" duration-ms="91729" started-at="2021-08-27T12:15:24Z" finished-at="2021-08-27T12:16:55Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:vtiger.Extentreporter@6cc4cdb9]" name="test2" duration-ms="6947" started-at="2021-08-27T17:13:53Z" finished-at="2021-08-27T17:14:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="FAIL" signature="method()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="method" duration-ms="1003" started-at="2021-08-27T12:16:55Z" finished-at="2021-08-27T12:16:56Z">
-          <exception class="junit.framework.AssertionFailedError">
-            <message>
-              <![CDATA[expected:<false> but was:<true>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<true>
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:147)
-	at junit.framework.Assert.assertEquals(Assert.java:153)
-	at assignmentTC.Testcase1.method(Testcase1.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:vtiger.Extentreporter@6cc4cdb9]" name="close" is-config="true" duration-ms="2232" started-at="2021-08-27T17:14:01Z" finished-at="2021-08-27T17:14:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="logout" is-config="true" duration-ms="31505" started-at="2021-08-27T12:16:58Z" finished-at="2021-08-27T12:17:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="closebrowser" is-config="true" duration-ms="483" started-at="2021-08-27T12:17:30Z" finished-at="2021-08-27T12:17:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="JDBCconnect()[pri:0, instance:assignmentTC.Testcase1@7cd62f43]" name="JDBCconnect" is-config="true" duration-ms="1" started-at="2021-08-27T12:17:31Z" finished-at="2021-08-27T12:17:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JDBCconnect -->
-      </class> <!-- assignmentTC.Testcase1 -->
+        </test-method> <!-- close -->
+      </class> <!-- vtiger.Extentreporter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

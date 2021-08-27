@@ -2,6 +2,9 @@ package com.generic;
 
 public interface AutoConstants {
 	public static String DirPath=System.getProperty("user.dir");
+
+	String ExtentReportPath ="ExtentReport\\Report1";
+	
 	
 	String proppath=DirPath+"/src/test/resources/commData.properties.txt";
 	String propfile="";

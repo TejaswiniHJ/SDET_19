@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import com.generic.Data_proper;
 import com.generic.Webdriver_utility;
@@ -17,7 +18,7 @@ public class Tooltip
 {
 public static void main(String[] args) throws IOException {
 	
-
+String exp = "Calendar...";
 	WebDriver driver=new ChromeDriver();
 	Data_proper prop=new Data_proper();
 	driver.get(prop.read("url"));
@@ -31,5 +32,7 @@ public static void main(String[] args) throws IOException {
 	WebElement att = driver.findElement(By.xpath("//img[@title='Open Calendar...']"));
 String tool = att.getAttribute("title");
 System.out.println(tool);
+
+Assert.assertEquals(exp, tool);
 }
 }

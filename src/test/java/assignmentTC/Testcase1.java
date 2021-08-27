@@ -1,6 +1,5 @@
 package assignmentTC;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.generic.Base_Test;
@@ -12,7 +11,7 @@ public class Testcase1 extends Base_Test
 {
 
 
-	@Test(groups="Regression")
+	@Test(groups="Regression",retryAnalyzer=com.generic.Retryanalyser.class)
 
 	public void method() throws InterruptedException
 	{
@@ -21,7 +20,7 @@ public class Testcase1 extends Base_Test
 		HomePage hm=new HomePage(driver);
 
 		hm.getmorelinkk().click();
-		//Assert.assertEquals(false, true);
+		Assert.assertEquals(false, true);
 		
 
 		//		driver.findElement(By.xpath("//img[@src='themes/softed/images/menuDnArrow.gif']"));
