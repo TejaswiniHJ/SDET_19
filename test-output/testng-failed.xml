@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.generic.Listener"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
+      <class name="assignmentTC.TestCase_2">
+        <methods>
+          <include name="method"/>
+          <include name="launch"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- assignmentTC.TestCase_2 -->
       <class name="assignmentTC.Testcase1">
         <methods>
           <include name="launch"/>
@@ -15,5 +27,5 @@
         </methods>
       </class> <!-- assignmentTC.Testcase1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

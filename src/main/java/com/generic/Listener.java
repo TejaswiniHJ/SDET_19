@@ -23,10 +23,12 @@ public class Listener implements ITestListener
 		
 	}
 
-	public void onStart(ITestContext arg0) {
+	public void onStart(ITestContext arg0) 
+	{
+	Java_Utilities j=new Java_Utilities();
+	String date = j.ForDate();
 		
-		
-		reporter=new ExtentHtmlReporter(AutoConstants.ExtentReportPath+".html");
+		reporter=new ExtentHtmlReporter(AutoConstants.ExtentReportPath+date+".html");
 		reporter.config().setDocumentTitle("SDET_19");
 		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setReportName("Smoke");
@@ -48,7 +50,7 @@ public class Listener implements ITestListener
 	}
 
 	public void onTestFailure(ITestResult result) {
-		test.log(Status.FAIL, result.getName()+" is Passed");
+		test.log(Status.FAIL, result.getName()+" is failed");
 		test.log(Status.FAIL, result.getThrowable());
 		
 		
